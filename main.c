@@ -6,7 +6,7 @@ int main (int argc, char *argv[]) {
 
     
 
-    if (argc >= 4){
+    if (argc == 4){
         char *mode = argv[1];
         if(mode[1] == 'e'){
 

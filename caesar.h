@@ -104,11 +104,11 @@ char* getText(char * text){
 }
 
 void help(){
-    printf("\nHelp\n");
+    printf("\nHelp Menu\n\n");
     printf("---------modes-----------\n\n");
-    printf("-e  | encrypt \n");
-    printf("-d  | decrypt \n");
-    printf("-h  | help \n\n\n");
+    printf("-e                | encrypt \n");
+    printf("-d                | decrypt \n");
+    printf("-h                | help \n\n\n");
     printf("---------params----------\n\n");
     printf("-p=['password']   | password \n");
     printf("-m=['message']    | message \n\n\n");
@@ -118,5 +118,5 @@ void help(){
 }
 
 void error(){
-    printf("False Syntax: For Help type caesar -h\n");
+    printf("\n\n\nFalse Syntax: For Help type caesar -h\n");
 }
