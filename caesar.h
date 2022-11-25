@@ -71,13 +71,12 @@ char * decrypt(char * klartext, char* key){
 char* getKey(char * key){
     
     int size = strlen(key);
-
+    
 
     for(int i = 0; i<size-3; i++){
         key[i] = key[i+3];
-
     }
-    
+
     for(int i = size-3; i<size;i++){
         key[i] = '\0';
     }
@@ -90,17 +89,14 @@ char* getText(char * text){
     
     int size = strlen(text);
 
-
     for(int i = 0; i<size-3; i++){
         text[i] = text[i+3];
-
     }
-    
     for(int i = size-3; i<size;i++){
         text[i] = '\0';
     }
     return text;
-
+    
 }
 
 void help(){
@@ -118,5 +114,5 @@ void help(){
 }
 
 void error(){
-    printf("\n\n\nFalse Syntax: For Help type caesar -h\n");
+    printf("\n\n\nFalse Syntax: For Help type caesar -h\n\n\n");
 }
