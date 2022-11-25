@@ -18,10 +18,8 @@ char* encrypt(char* klartext, char* key){
         }
 
         if(c >= 'a' && c <= 'z'){
-            printf("code: %c, key: %c\n", c, key[index_key]);
             c = ((c - 'a') + (key[index_key] - 'a')) % 26 + 'a';
         }else if(isupper(c)){
-            printf("code: %c, key: %c\n", c, key[index_key]);
             if(islower(key[index_key])){
                 c = ((c - 'A') + (toupper(key[index_key]) - 'A')) % 26 + 'A';
             }else{
@@ -52,14 +50,12 @@ char * decrypt(char * klartext, char* key){
         }
 
         if(c >= 'a' && c <= 'z'){
-            printf("code: %c, key: %c\n", c, key[index_key]);
             c = ((c - 'a') + ('z' - key[index_key]+1)) % 26 + 'a';
             
         }else if(isupper(c)){
             if(islower(key[index_key])){
                 c = ((c - 'A') + ('Z' - toupper(key[index_key])+1)) % 26 + 'A';
             }else{
-                printf("code: %c, key: %c\n", c, key[index_key]);
                 c = ((c - 'A') + ('Z' - key[index_key]+1)) % 26 + 'A';
             }
         }
