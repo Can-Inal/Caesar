@@ -102,3 +102,21 @@ char* getText(char * text){
     return text;
 
 }
+
+void help(){
+    printf("\nHelp\n");
+    printf("---------modes-----------\n\n");
+    printf("-e  | encrypt \n");
+    printf("-d  | decrypt \n");
+    printf("-h  | help \n\n\n");
+    printf("---------params----------\n\n");
+    printf("-p=['password']   | password \n");
+    printf("-m=['message']    | message \n\n\n");
+    printf("\n\nyou have to define mode as first.\n");
+    printf("password(optional) as second. Default value = 'caesar'\n");
+    printf("message as third.\n\n");
+}
+
+void error(){
+    printf("False Syntax: For Help type caesar -h\n");
+}
